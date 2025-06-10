@@ -100,3 +100,9 @@ If an extension isn't listed, the file will go into an `others/` folder.
 
 ---
 
+## 📄 License
+
+MIT License  
+Feel free to use, modify, and share.
+
+---
