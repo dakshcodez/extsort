@@ -35,14 +35,18 @@ hash_map = {
     ".hs": "haskell",
 }
 
+def is_executable_file(path):
+    return (
+        os.path.isfile(path) and os.access(path, os.X_OK)  
+    )
 
 def organize(folder_path):
     for file in os.listdir(folder_path):
-        if os.path.isfile(os.path.join(folder_path,file)):
-            ext = file[file.index('.'):]
-            new_folder = hash_map[ext]
+        old_file_path = os.path.join(folder_path,file)
 
-            old_file_path = os.path.join(folder_path,file)
+        if os.path.isfile(old_file_path) and not is_executable_file(old_file_path):
+            ext = file[file.find('.'):]
+            new_folder = hash_map[ext]
             
             new_folder_path = os.path.join(folder_path,new_folder)
             new_file_path = os.path.join(new_folder_path, file)
@@ -54,5 +58,8 @@ def organize(folder_path):
             os.rename(old_file_path,new_file_path)
             print(f'File {file} moved from {folder_path} to {new_folder_path}')
             print('\n')
+
+        elif is_executable_file(old_file_path):
+            os.remove(old_file_path)
 
 organize(folder_path)
