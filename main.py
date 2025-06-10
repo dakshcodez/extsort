@@ -5,6 +5,9 @@ load_dotenv()
 
 folder_path = os.getenv('FOLDER_PATH')
 
+if not folder_path:
+    raise ValueError("FOLDER_PATH not set in .env file")
+
 hash_map = {
     ".txt": "text_file",
     ".py": "python",
