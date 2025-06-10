@@ -75,3 +75,28 @@ python main.py
 ```
 
 ---
+
+## 🛠 Customize File Types
+
+Edit the `file_names.py` file to change how extensions map to folder names:
+
+```python
+hash_map = {
+    ".py": "python",
+    ".pdf": "pdf",
+    ".mp4": "video",
+    # add more as needed...
+}
+```
+
+If an extension isn't listed, the file will go into an `others/` folder.
+
+---
+
+## ⚠️ Notes
+
+- This script deletes executable files (`.exe`, `.run`, etc.). You can disable or change this behavior in `main.py`.
+- Make sure your `FOLDER_PATH` is correct — this script **moves and deletes files**.
+
+---
+
