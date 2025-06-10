@@ -3,11 +3,7 @@ extsort is a lightweight Python utility that organizes files in a folder based o
 
 ## 📦 Features
 - Automatically organizes files into folders by extension
-
 - Deletes executable files for cleanup (optional behavior)
-
 - Skips files with no extension
-
 - Easy to configure using .env and a customizable mapping
-
 - Written in clean, modular Python
