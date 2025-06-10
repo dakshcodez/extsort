@@ -12,3 +12,36 @@
 - Easy to configure using .env and a customizable mapping
 - Written in clean, modular Python
 
+---
+
+## 📁 Example
+
+Before:
+
+```
+/myfolder
+├── main.py
+├── resume.pdf
+├── video.mp4
+├── notes.txt
+├── installer.run
+```
+
+After running `extsort`:
+
+```
+/myfolder
+├── python/
+│   └── main.py
+├── pdf/
+│   └── resume.pdf
+├── video/
+│   └── video.mp4
+├── text_file/
+│   └── notes.txt
+```
+
+> Executable file `installer.run` is deleted.
+
+---
+
