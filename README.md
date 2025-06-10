@@ -106,3 +106,9 @@ MIT License
 Feel free to use, modify, and share.
 
 ---
+
+## 💡 Future Improvements
+
+- Make this a CLI tool
+- Drag-and-drop folder input
+- Add logging
