@@ -45,3 +45,33 @@ After running `extsort`:
 
 ---
 
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/dakshcodez/extsort.git
+cd extsort
+```
+
+### 2. Install requirements
+
+```bash
+pip install python-dotenv
+```
+
+### 3. Set up your `.env`
+
+Create a `.env` file in the root directory:
+
+```env
+FOLDER_PATH=/full/path/to/your/folder
+```
+
+### 4. Run the script
+
+```bash
+python main.py
+```
+
+---
