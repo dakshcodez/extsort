@@ -49,8 +49,10 @@ def organize(folder_path):
 
             if not os.path.exists(new_folder_path):
                 os.mkdir(new_folder_path)
-                print("file created")
-
+                print(f'New Directory {new_folder_path} created')
             
+            os.rename(old_file_path,new_file_path)
+            print(f'File {file} moved from {folder_path} to {new_folder_path}')
+            print('\n')
 
 organize(folder_path)
